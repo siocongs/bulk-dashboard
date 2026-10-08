@@ -2,18 +2,16 @@
 
 Dashboard monitoring volume semen/cement berdasarkan **Plant**, **Category (SALES/TRANSFER)**, **Year**, **Month**, **Coding DD**, **rentang tanggal**, dan **jenis Cement**.
 
-Project ini dibuat sebagai prototype dari screenshot Excel/Pivot yang diberikan. Data awal di `lib/data.ts` adalah **data dummy** yang mengikuti angka agregat yang tampak pada screenshot, bukan data produksi perusahaan.
-
-## 1. Teknologi
+## 1. Tech
 
 - Next.js 16.3.8 + App Router
 - React 19.3.0
 - TypeScript
-- Recharts 3.10.1 untuk grafik
-- Lucide React untuk ikon
-- CSS biasa melalui `app/globals.css` agar mudah dipelajari
+- Recharts 3.10.1 grafik
+- Lucide React ikon
+- CSS melalui `app/globals.css`
 
-## 2. Prasyarat
+## 2. How to Run
 
 Gunakan Node.js **20.9+**. Untuk belajar dari awal, npm sudah cukup.
 
@@ -24,7 +22,6 @@ node -v
 npm -v
 ```
 
-## 3. Menjalankan project
 
 ```bash
 cd cement-volume-dashboard
@@ -38,14 +35,14 @@ Buka:
 http://localhost:3000
 ```
 
-## 4. Pemeriksaan sebelum commit
+## 3. Check before commit
 
 ```bash
 npm run typecheck
 npm run build
 ```
 
-## 5. Fitur yang sudah dibuat
+## 4. Feature
 
 ### Filter
 
@@ -74,7 +71,7 @@ npm run build
 - Export Summary ke CSV
 - Responsive untuk laptop/tablet/mobile
 
-## 6. Struktur folder
+## 5. Project Structure
 
 ```text
 cement-volume-dashboard/
@@ -97,7 +94,7 @@ cement-volume-dashboard/
 └── README.md
 ```
 
-## 7. Bagian yang paling penting untuk magang
+## 6. Point
 
 ### `lib/data.ts`
 
@@ -123,7 +120,7 @@ Nanti `mockRecords` dapat diganti dengan data dari:
 3. file CSV/Excel yang diproses backend,
 4. atau sumber data perusahaan lainnya.
 
-## 8. Alur pengembangan ke versi production
+## 7. Flow
 
 ```text
 Source Data
@@ -143,7 +140,7 @@ Deployment
 
 Jangan langsung memasukkan kredensial database ke browser. Password/secret harus disimpan di environment server, misalnya `.env.local`, dan koneksi database dilakukan di sisi server.
 
-## 9. Mapping Coding DD / Cement
+## 8. Mapping Coding DD / Cement
 
 Daftar coding diambil dari pesan referensi yang diberikan:
 
@@ -176,29 +173,4 @@ T   TR-30
 U   TR-15
 V   TR-20
 X   CaCO3
-```
-
-## 10. Catatan data
-
-Screenshot menunjukkan angka agregat seperti:
-
-- Plant 1 — SALES: 5,703.04
-- Plant 2 — SALES: 1,184.74
-- Plant 5 — SALES: 8,150.82
-- Plant 6 — SALES: 2,513.30
-- Plant 8 — SALES: 105,715.50; TRANSFER: 26,308.02
-- Plant 11 — SALES: 83,196.43; TRANSFER: 19,167.56
-- Plant 14 — SALES: 150,319.04; TRANSFER: 71,367.80
-
-Prototype mendistribusikan angka agregat tersebut menjadi data harian dan cement agar filter dapat dicoba.
-
-## 11. Git
-
-```bash
-git init
-git add .
-git commit -m "feat: init cement volume dashboard"
-git branch -M main
-git remote add origin <URL-REPOSITORY>
-git push -u origin main
 ```
