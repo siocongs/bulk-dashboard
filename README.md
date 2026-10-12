@@ -1,6 +1,6 @@
 # Cement Volume Dashboard — Next.js
 
-Dashboard monitoring volume semen/cement berdasarkan **Plant**, **Category (SALES/TRANSFER)**, **Year**, **Month**, **Coding DD**, **rentang tanggal**, dan **jenis Cement**.
+Dashboard monitoring volume semen/cement based **Plant**, **Category (SALES/TRANSFER)**, **Year**, **Month**, **Coding DD**, **rentang tanggal**, dan **jenis Cement**.
 
 ## 1. Tech
 
@@ -9,13 +9,10 @@ Dashboard monitoring volume semen/cement berdasarkan **Plant**, **Category (SALE
 - TypeScript
 - Recharts 3.10.1 grafik
 - Lucide React ikon
-- CSS melalui `app/globals.css`
 
 ## 2. How to Run
 
-Gunakan Node.js **20.9+**. Untuk belajar dari awal, npm sudah cukup.
-
-Cek instalasi:
+instalasi:
 
 ```bash
 node -v
@@ -29,7 +26,7 @@ npm install
 npm run dev
 ```
 
-Buka:
+Open:
 
 ```text
 http://localhost:3000
@@ -98,9 +95,7 @@ cement-volume-dashboard/
 
 ### `lib/data.ts`
 
-Saat source data asli sudah diberikan, fokus pertama ada di file ini. Prototype sekarang memakai `mockRecords`.
-
-Bentuk satu record:
+user `mockRecords`. Bentuk satu record:
 
 ```ts
 {
@@ -113,12 +108,12 @@ Bentuk satu record:
 }
 ```
 
-Nanti `mockRecords` dapat diganti dengan data dari:
+replace `mockRecords` can updated from:
 
 1. SQL database,
 2. REST API,
 3. file CSV/Excel yang diproses backend,
-4. atau sumber data perusahaan lainnya.
+4. other resources.
 
 ## 7. Flow
 
@@ -137,8 +132,6 @@ Chart + Table
    ↓
 Deployment
 ```
-
-Jangan langsung memasukkan kredensial database ke browser. Password/secret harus disimpan di environment server, misalnya `.env.local`, dan koneksi database dilakukan di sisi server.
 
 ## 8. Mapping Coding DD / Cement
 
