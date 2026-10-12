@@ -142,8 +142,6 @@ Jangan langsung memasukkan kredensial database ke browser. Password/secret harus
 
 ## 8. Mapping Coding DD / Cement
 
-Daftar coding diambil dari pesan referensi yang diberikan:
-
 ```text
 !   PCC JEMPOLAN
 #   OPC BOSOWA
